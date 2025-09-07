@@ -17,7 +17,7 @@ jobs:
 
     steps:
       - name: KeepAlive via container
-        uses: docker://docker.io/xxzzxxoo/noer:latest
+        uses: docker://ghcr.io/uncleluogithub/cf-keepalive:latest
         env:
           CF_USERNAME: ${{ secrets.CF_USERNAME }}
           CF_PASSWORD: ${{ secrets.CF_PASSWORD }}
